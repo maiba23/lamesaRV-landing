@@ -7,8 +7,9 @@ export const repoName = "lamesarv";
 
 // -- Link resolution rules
 export const linkResolver = (doc) => {
+  console.log(doc);
   if (doc.type === "landing_page") {
-    return `/${doc.uid}`;
+    return `/`;
   }
   return "/";
 };
